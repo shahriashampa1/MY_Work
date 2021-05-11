@@ -1,0 +1,60 @@
+DoubleClick "ChromeIcon"
+WaitFor 30.0, "RefreshButton"
+TypeText "https://qa.testamt.com"Return
+Click (Image:"UsernameField", WaitFor:5)
+TypeText "Shahria01"
+Click (Image:"PasswordField", WaitFor:5)
+TypeText "amtDirect01!"
+Click (Image:"ClientField", WaitFor:5)
+TypeText "201533"
+Click (Image:"Log inButton", WaitFor:3 minutes)
+If ImageFound(Text:"Dashboard", WaitFor:1 minutes) then
+LogSuccess "Log In Successfully"
+else
+LogError " Failed to Log In"
+End If
+Click (Image:"Portfolio Insight", WaitFor:3 minutes)
+Click (Image:"Add", WaitFor:3 minutes)
+Click (Image:"Location", WaitFor:3 minutes)
+If imagefound(Text:"Location Information", WaitFor:3 minutes) then
+LogSuccess "Location Information screen appears properly"
+else
+LogError "Failed"
+end if
+Click (Image:"Location NameField", WaitFor:3 minutes)
+TypeText "Location"
+Click (Image:"Location CodeField", WaitFor:3 minutes)
+TypeText "L1"
+Click (Image:"Address - 1Field", WaitFor:3 minutes)
+TypeText "XYZ"
+Click (Image:"CountryMenu", WaitFor:3 minutes)
+Click (Image:"United States", WaitFor:3 minutes) 
+Click (Image:StateMenu", WaitFor:3 minutes)
+Click (Image:"New York", WaitFor:3 minutes) 
+Click (Image:PostalField", WaitFor:3 minutes)
+TypeText "123456"
+Click (Image:CityField", WaitFor:3 minutes)
+TypeText "NY"
+Click (Image:Code TypeMenu", WaitFor:3 minutes)
+Click (Image:"DEFAULT", WaitFor:3 minutes) 
+Click (Image:StatusMenu", WaitFor:3 minutes)
+Click (Image:"Active", WaitFor:3 minutes)
+Click (Image:"CurrencyMenu", WaitFor:3 minutes)
+Click (Image:"USD", WaitFor:3 minutes) 
+Click (Image:"Chart TypeMenu", WaitFor:3 minutes) 
+Click (Image:"QA Testing", WaitFor:3 minutes) 
+Click (Image:"OK", WaitFor:3 minutes) 
+Click (Image:"LocationTypeMenu", WaitFor:3 minutes) 
+Click (Image:"Industrial", WaitFor:3 minutes) 
+Click (Image:"Building ListMenu", WaitFor:3 minutes) 
+Click (Image:"Building List", WaitFor:3 minutes) 
+Click (Image:"RegionMenu", WaitFor:3 minutes)
+Click (Image:"Central", WaitFor:3 minutes)
+Click (Image:"Asset TypeMenu", WaitFor:3 minutes)
+Click (Image:"Leased", WaitFor:3 minutes)
+Click (Image:"Sq.Ft. RentableField", WaitFor:3 minutes)
+TypeText "1000000"
+Click (Image:"Do you want to manage spaces?Checkbox", WaitFor:3 minutes)
+Click (Image:"SaveButton", WaitFor:3 minutes)
+Click (Image:"CloseButton", WaitFor:3 minutes)
+
