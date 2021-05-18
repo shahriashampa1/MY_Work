@@ -1,0 +1,29 @@
+{
+	"id": "368a93a9-7402-4be6-8dfc-b5d64ba8322d",
+	"values": [
+		{
+			"key": "url",
+			"value": "https://jsonplaceholder.typicode.com",
+			"enabled": true
+		},
+		{
+			"key": "Customer",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "collection-link",
+			"value": "",
+			"enabled": false
+		},
+		{
+			"key": "collection-link",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"name": "My_Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2021-05-11T06:50:09.633Z",
+	"_postman_exported_using": "Postman/7.36.5"
+}
